@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1° ADO: Cálculo de IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="" alt="">
+        <h1>Calculadora de Massa Corporal</h1>
+    </header>
+    <main>
+        <section id="section-form">
+            <div class = "form-imc">
+                <form id="form-imc">
+                    <div class="campoNome">
+                        <label for="nome">Qual seu nome?</label>
+                        <input type="text"  id= "nome" name="nome">
+                    </div>
+                    <div class="campoPeso">
+                        <label for="peso">Quanto você pesa?</label>
+                        <input type="number" id="peso" name="peso" step="0.1">
+                    </div>
+                    <div class="campoAltura">
+                        <label for="altura">Qual sua altura</label>
+                        <input type="number" id = "altura" name="altura" step="0.1">
+                    </div>
+                    <button type="button" id="novaPessoa">Nova Pessoa</button>
+                </form>
+            </div>
+        </section>
+       <section id="section-table">
+        <table>
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Nome</th>
+                <th>Peso</th>
+                <th>Altura</th>
+                <th>IMC</th>
+                <th>Classificação</th>
+            </tr>
+            </thead>
+            <tbody id="tabela-body"></tbody>
+        </table>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
